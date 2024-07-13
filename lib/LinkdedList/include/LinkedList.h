@@ -1,3 +1,6 @@
+#ifndef FC40982D_8C38_4DEC_9C5C_B6D85190AD1B
+#define FC40982D_8C38_4DEC_9C5C_B6D85190AD1B
+
 #include <stdbool.h>
 
 typedef struct LinkedListNode LinkedListNode;
@@ -41,3 +44,5 @@ LinkedListNode *FindElement(void *); // returns the first node with with value s
 void InsertFront(LinkedList *, void *);
 void InsertBack(LinkedList *, void *);
 void InsertAfter(LinkedList *, LinkedListNode *, void *);
+
+#endif /* FC40982D_8C38_4DEC_9C5C_B6D85190AD1B */
