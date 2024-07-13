@@ -39,7 +39,7 @@ void PrintList(LinkedList *);
 void PrintListFront(LinkedList *);
 void PrintListBack(LinkedList *);
 
-LinkedListNode *FindElement(void *); // returns the first node with with value supplied
+LinkedListNode *FindElement(LinkedList *, void *); // returns the first node with with value supplied
 
 void InsertFront(LinkedList *, void *);
 void InsertBack(LinkedList *, void *);
