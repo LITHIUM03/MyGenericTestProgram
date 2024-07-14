@@ -13,7 +13,7 @@ option(BUILD_UNIT_TESTS "Build unit tests" OFF)
 option(BUILD_MAIN_PROGRAM "Build main program" OFF)
 
 # Add subdirectories
-add_subdirectory(${PROJECT_SOURCE_DIR}/lib/LinkdedList/src/))
+add_subdirectory(${PROJECT_SOURCE_DIR}/lib/LinkdedList)
 
 if (BUILD_UNIT_TESTS)
     enable_testing()
