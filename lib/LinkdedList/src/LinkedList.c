@@ -1,5 +1,6 @@
 #include "LinkedList.h"
 #include <stdlib.h>
+#include <stdio.h>
 
 LinkedList *CreateEmptyList()
 {
@@ -84,14 +85,14 @@ void SetDestroyElemFunc(LinkedList *list, void (*func)(void *))
     list->DestroyElemFunc = func;
 }
 
-void SetCopyElemFunc(LinkedList *list, void (*func)(void *))
+void SetCopyElemFunc(LinkedList *list, void* (*func)(void *))
 {
     if (NULL == list)
         return;
     list->CopyElemFunc = func;
 }
 
-void SetCompareElemFunc(LinkedList *list, void (*func)(void *, void *))
+void SetCompareElemFunc(LinkedList *list, bool (*func)(void *, void *))
 {
     if (NULL == list)
         return;

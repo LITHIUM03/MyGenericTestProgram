@@ -30,8 +30,8 @@ void DestroyList(LinkedList *);
 
 void SetPrintElemFunc(LinkedList *, void (*)(void *));
 void SetDestroyElemFunc(LinkedList *, void (*)(void *));
-void SetCopyElemFunc(LinkedList *, void (*)(void *));
-void SetCompareElemFunc(LinkedList *, void (*)(void *, void *));
+void SetCopyElemFunc(LinkedList *, void* (*)(void *));
+void SetCompareElemFunc(LinkedList *list, bool (*)(void *, void *));
 
 bool IsListInitialized(LinkedList *);
 
